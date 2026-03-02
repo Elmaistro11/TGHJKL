@@ -1,0 +1,11 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #fff8f0 0%, #f7ede2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
