@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR CAFE - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="cup-icon">☕</span>
+            <span class="brand-name">MR CAFE</span>
+        </div>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=800&h=900&fit=crop" alt="Coffee background">
+        </div>
+        <div class="hero-content">
+            <span class="premium-badge">PREMIUM EXPERIENCE</span>
+            <h1 class="hero-title">MR CAFE</h1>
+            <p class="hero-subtitle">اكتشف عالم المشروبات الفاخرة</p>
+            <p class="scroll-indicator">SCROLL</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category-line"></div>
+        <div class="categories-grid">
+            <button class="category-btn" data-category="all">
+                <span class="en">ALL</span>
+                <span class="ar">الكل</span>
+            </button>
+            <button class="category-btn active" data-category="coffee">
+                <span class="en">COFFEE</span>
+                <span class="ar">قهوة</span>
+                <span class="emoji">☕</span>
+            </button>
+            <button class="category-btn" data-category="cold">
+                <span class="en">COLD DRINKS</span>
+                <span class="ar">مشروبات باردة</span>
+                <span class="emoji">🧊</span>
+            </button>
+            <button class="category-btn" data-category="tea">
+                <span class="en">TEA</span>
+                <span class="ar">شاي</span>
+                <span class="emoji">🫖</span>
+            </button>
+            <button class="category-btn" data-category="smoothie">
+                <span class="en">SMOOTHIE</span>
+                <span class="ar">سموذي</span>
+                <span class="emoji">🧋</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="products-container">
+            <!-- Espresso Card -->
+            <div class="product-card" data-category="coffee">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578314675288-ffb23a08fa99?w=300&h=300&fit=crop" alt="Espresso">
+                    <span class="product-icon">☕</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <span class="ar">اسبريسو</span>
+                        <span class="en">ESPRESSO</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="ar">ريس</span>
+                        <span class="price">15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cappuccino Card -->
+            <div class="product-card" data-category="coffee">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1572442207952-7f7db3ff0201?w=300&h=300&fit=crop" alt="Cappuccino">
+                    <span class="product-icon">☕</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <span class="ar">كابتشينو</span>
+                        <span class="en">CAPPUCCINO</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="ar">ريس</span>
+                        <span class="price">20</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latte Card -->
+            <div class="product-card" data-category="coffee">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1561758033-d89a0ad7a3e0?w=300&h=300&fit=crop" alt="Latte">
+                    <span class="product-icon">☕</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <span class="ar">لاتيه</span>
+                        <span class="en">LATTE</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="ar">ريس</span>
+                        <span class="price">22</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iced Coffee Card -->
+            <div class="product-card" data-category="cold">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop" alt="Iced Coffee">
+                    <span class="product-icon">🧊</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <span class="ar">قهوة مثلجة</span>
+                        <span class="en">ICED COFFEE</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="ar">ريس</span>
+                        <span class="price">18</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Green Tea Card -->
+            <div class="product-card" data-category="tea">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1597318933181-c6287c60f63b?w=300&h=300&fit=crop" alt="Green Tea">
+                    <span class="product-icon">🫖</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <span class="ar">شاي أخضر</span>
+                        <span class="en">GREEN TEA</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="ar">ريس</span>
+                        <span class="price">12</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smoothie Card -->
+            <div class="product-card" data-category="smoothie">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1590530936854-a146f1b0a1e8?w=300&h=300&fit=crop" alt="Smoothie">
+                    <span class="product-icon">🧋</span>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">
+                        <span class="ar">عصير سموذي</span>
+                        <span class="en">SMOOTHIE</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="ar">ريس</span>
+                        <span class="price">25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
