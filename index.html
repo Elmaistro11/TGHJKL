@@ -13,13 +13,13 @@
             <span class="cup-icon">☕</span>
             <span class="brand-name">MR CAFE</span>
         </div>
-        <button class="theme-toggle" id="themeToggle">🌙</button>
+        <button class="theme-toggle" id="themeToggle">🌞</button>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?w=800&h=900&fit=crop" alt="Coffee background">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='900'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231a3a2a;stop-opacity:0.8' /%3E%3Cstop offset='50%25' style='stop-color:%230d1f18;stop-opacity:0.9' /%3E%3Cstop offset='100%25' style='stop-color:%23050f0a;stop-opacity:1' /%3E%3C/linearGradient%3E%3CradialGradient id='coffee1' cx='20%25' cy='30%25' r='60%25'%3E%3Cstop offset='0%25' style='stop-color:%23c5956f;stop-opacity:0.3' /%3E%3Cstop offset='100%25' style='stop-color:%23000000;stop-opacity:0' /%3E%3C/radialGradient%3E%3CradialGradient id='coffee2' cx='75%25' cy='70%25' r='50%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4a574;stop-opacity:0.2' /%3E%3Cstop offset='100%25' style='stop-color:%23000000;stop-opacity:0' /%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='900' fill='url(%23grad1)'/%3E%3Ccircle cx='150' cy='200' r='80' fill='url(%23coffee1)'/%3E%3Ccircle cx='650' cy='650' r='120' fill='url(%23coffee2)'/%3E%3Ccircle cx='100' cy='750' r='60' fill='url(%23coffee1)'/%3E%3C/svg%3E" alt="Coffee background">
         </div>
         <div class="hero-content">
             <span class="premium-badge">PREMIUM EXPERIENCE</span>
@@ -66,7 +66,27 @@
             <!-- Espresso Card -->
             <div class="product-card" data-category="coffee">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1578314675288-ffb23a08fa99?w=300&h=300&fit=crop" alt="Espresso">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="espresso-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="300" fill="url(#espresso-bg)"/>
+                        <!-- Cup -->
+                        <ellipse cx="150" cy="100" rx="50" ry="15" fill="#f0f0f0"/>
+                        <path d="M 100 100 L 90 200 Q 90 220 110 220 L 190 220 Q 210 220 210 200 L 200 100" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
+                        <!-- Coffee inside -->
+                        <ellipse cx="150" cy="105" rx="48" ry="12" fill="#3d2817"/>
+                        <path d="M 105 105 L 97 200 Q 97 215 115 215 L 185 215 Q 203 215 203 200 L 195 105" fill="#5c3d2e" opacity="0.8"/>
+                        <!-- Crema foam -->
+                        <ellipse cx="150" cy="100" rx="48" ry="8" fill="#8b6f47" opacity="0.6"/>
+                        <!-- Bubbles -->
+                        <circle cx="130" cy="95" r="3" fill="#a0826d" opacity="0.7"/>
+                        <circle cx="160" cy="92" r="2" fill="#a0826d" opacity="0.7"/>
+                        <circle cx="175" cy="98" r="2.5" fill="#a0826d" opacity="0.7"/>
+                    </svg>
                     <span class="product-icon">☕</span>
                 </div>
                 <div class="product-info">
@@ -84,7 +104,25 @@
             <!-- Cappuccino Card -->
             <div class="product-card" data-category="coffee">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1572442207952-7f7db3ff0201?w=300&h=300&fit=crop" alt="Cappuccino">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="cappuccino-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="300" fill="url(#cappuccino-bg)"/>
+                        <!-- Cup -->
+                        <ellipse cx="150" cy="100" rx="50" ry="15" fill="#f0f0f0"/>
+                        <path d="M 100 100 L 95 200 Q 95 220 115 220 L 185 220 Q 205 220 205 200 L 200 100" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
+                        <!-- Coffee inside -->
+                        <path d="M 107 140 L 100 200 Q 100 215 118 215 L 182 215 Q 200 215 200 200 L 193 140" fill="#5c3d2e"/>
+                        <!-- Milk foam on top -->
+                        <ellipse cx="150" cy="110" rx="46" ry="35" fill="#d4c5b9" opacity="0.9"/>
+                        <circle cx="130" cy="90" r="8" fill="#e8dfd8" opacity="0.8"/>
+                        <circle cx="160" cy="85" r="6" fill="#e8dfd8" opacity="0.8"/>
+                        <circle cx="170" cy="95" r="7" fill="#e8dfd8" opacity="0.8"/>
+                    </svg>
                     <span class="product-icon">☕</span>
                 </div>
                 <div class="product-info">
@@ -102,7 +140,27 @@
             <!-- Latte Card -->
             <div class="product-card" data-category="coffee">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1561758033-d89a0ad7a3e0?w=300&h=300&fit=crop" alt="Latte">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="latte-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="300" fill="url(#latte-bg)"/>
+                        <!-- Tall Cup -->
+                        <ellipse cx="150" cy="90" rx="45" ry="12" fill="#f0f0f0"/>
+                        <path d="M 105 90 L 92 210 Q 92 225 115 225 L 185 225 Q 208 225 208 210 L 195 90" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
+                        <!-- Coffee -->
+                        <path d="M 110 130 L 97 210 Q 97 220 118 220 L 182 220 Q 203 220 203 210 L 190 130" fill="#8b6f47"/>
+                        <!-- Milk layer -->
+                        <path d="M 113 115 L 105 130 L 195 130 L 187 115" fill="#c9b8a8"/>
+                        <!-- Foam top -->
+                        <ellipse cx="150" cy="95" rx="44" ry="15" fill="#e0d5ce"/>
+                        <circle cx="125" cy="82" r="6" fill="#f0e6de" opacity="0.9"/>
+                        <circle cx="155" cy="75" r="5" fill="#f0e6de" opacity="0.9"/>
+                        <circle cx="175" cy="85" r="6" fill="#f0e6de" opacity="0.9"/>
+                    </svg>
                     <span class="product-icon">☕</span>
                 </div>
                 <div class="product-info">
@@ -120,7 +178,28 @@
             <!-- Iced Coffee Card -->
             <div class="product-card" data-category="cold">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=300&h=300&fit=crop" alt="Iced Coffee">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="iced-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="300" fill="url(#iced-bg)"/>
+                        <!-- Glass -->
+                        <ellipse cx="150" cy="85" rx="45" ry="12" fill="none" stroke="#e8f4f8" stroke-width="2"/>
+                        <path d="M 105 85 L 98 210 Q 98 225 120 225 L 180 225 Q 202 225 202 210 L 195 85" fill="none" stroke="#e8f4f8" stroke-width="2"/>
+                        <!-- Coffee inside -->
+                        <path d="M 110 140 L 103 210 Q 103 220 122 220 L 178 220 Q 197 220 197 210 L 190 140" fill="#6b4423" opacity="0.7"/>
+                        <!-- Ice cubes -->
+                        <rect x="115" y="95" width="20" height="20" fill="#c0e0f0" opacity="0.6" stroke="#a0d0f0" stroke-width="1"/>
+                        <rect x="160" y="110" width="18" height="18" fill="#b8dce8" opacity="0.6" stroke="#98cce0" stroke-width="1"/>
+                        <rect x="135" y="125" width="22" height="22" fill="#c8e8f8" opacity="0.6" stroke="#a8d8f0" stroke-width="1"/>
+                        <rect x="175" y="135" width="16" height="16" fill="#b8dce8" opacity="0.6" stroke="#98cce0" stroke-width="1"/>
+                        <!-- Straw -->
+                        <line x1="145" y1="60" x2="140" y2="215" stroke="#ff6b6b" stroke-width="3" opacity="0.8"/>
+                        <line x1="147" y1="60" x2="152" y2="215" stroke="#ff4545" stroke-width="2" opacity="0.6"/>
+                    </svg>
                     <span class="product-icon">🧊</span>
                 </div>
                 <div class="product-info">
@@ -138,7 +217,24 @@
             <!-- Green Tea Card -->
             <div class="product-card" data-category="tea">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1597318933181-c6287c60f63b?w=300&h=300&fit=crop" alt="Green Tea">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="tea-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="300" fill="url(#tea-bg)"/>
+                        <!-- Teacup -->
+                        <ellipse cx="150" cy="95" rx="48" ry="14" fill="#f0f0f0"/>
+                        <path d="M 102 95 L 88 190 Q 88 215 115 215 L 185 215 Q 212 215 212 190 L 198 95" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
+                        <!-- Tea inside -->
+                        <path d="M 108 120 L 95 190 Q 95 210 118 210 L 182 210 Q 205 210 205 190 L 192 120" fill="#7cb342" opacity="0.8"/>
+                        <!-- Tea color layer -->
+                        <ellipse cx="150" cy="125" rx="42" ry="8" fill="#9ccc65" opacity="0.6"/>
+                        <!-- Handle -->
+                        <path d="M 198 110 Q 230 110 230 155 Q 230 190 198 190" fill="none" stroke="#d0d0d0" stroke-width="3"/>
+                    </svg>
                     <span class="product-icon">🫖</span>
                 </div>
                 <div class="product-info">
@@ -156,7 +252,32 @@
             <!-- Smoothie Card -->
             <div class="product-card" data-category="smoothie">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1590530936854-a146f1b0a1e8?w=300&h=300&fit=crop" alt="Smoothie">
+                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="smoothie-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="smoothie-color" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#c41e3a;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="300" height="300" fill="url(#smoothie-bg)"/>
+                        <!-- Glass -->
+                        <ellipse cx="150" cy="80" rx="42" ry="10" fill="none" stroke="#f0f0f0" stroke-width="2"/>
+                        <path d="M 108 80 L 95 210 Q 95 225 120 225 L 180 225 Q 205 225 205 210 L 192 80" fill="none" stroke="#f0f0f0" stroke-width="2"/>
+                        <!-- Smoothie -->
+                        <path d="M 113 100 L 100 210 Q 100 220 122 220 L 178 220 Q 200 220 200 210 L 187 100" fill="url(#smoothie-color)"/>
+                        <!-- Foam top -->
+                        <ellipse cx="150" cy="85" rx="40" ry="18" fill="#ff9eb3" opacity="0.8"/>
+                        <circle cx="130" cy="65" r="7" fill="#ffb3cc" opacity="0.9"/>
+                        <circle cx="160" cy="60" r="6" fill="#ffb3cc" opacity="0.9"/>
+                        <circle cx="175" cy="75" r="6" fill="#ffb3cc" opacity="0.9"/>
+                        <!-- Straw -->
+                        <line x1="145" y1="50" x2="140" y2="220" stroke="#ff6b6b" stroke-width="3" opacity="0.8"/>
+                        <line x1="147" y1="50" x2="152" y2="220" stroke="#ff4545" stroke-width="2" opacity="0.6"/>
+                    </svg>
                     <span class="product-icon">🧋</span>
                 </div>
                 <div class="product-info">
