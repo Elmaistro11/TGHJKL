@@ -153,6 +153,11 @@
           <label for="p-email" data-i18n="label_email">Email</label>
           <input type="email" id="p-email" placeholder="you@example.com" data-i18n-placeholder="placeholder_email" required>
   
+          <!-- Send sign-in link button -->
+          <div style="margin:10px 0 16px;">
+            <button type="button" id="email-link-btn" class="btn btn-outline" style="width:100%;">Send sign-in link</button>
+          </div>
+
           <label for="p-pass" data-i18n="label_password">Password</label>
           <input type="password" id="p-pass" placeholder="Enter your password" data-i18n-placeholder="placeholder_password" required>
   
@@ -252,7 +257,10 @@
     signInWithPhoneNumber,
     onAuthStateChanged,
     signOut,
-    getIdTokenResult
+    getIdTokenResult,
+    sendSignInLinkToEmail,
+    isSignInWithEmailLink,
+    signInWithEmailLink
   } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
   // بيانات مشروعك es3af
@@ -283,7 +291,10 @@
     signInWithPhoneNumber,
     onAuthStateChanged,
     signOut,
-    getIdTokenResult
+    getIdTokenResult,
+    sendSignInLinkToEmail,
+    isSignInWithEmailLink,
+    signInWithEmailLink
   };
 </script>
 
